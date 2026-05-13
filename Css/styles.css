@@ -1126,7 +1126,7 @@ footer>p {
 
 /* تنسيقات البانر الرئيسي */
 .hero-banner {
-    background: linear-gradient(135deg, var(--primary-dark), var(--dark));
+    background:url(../image/image4.jpeg);
     border-radius: .5rem .5rem 2rem 2rem;
     min-height: 600px;
     overflow: hidden;
