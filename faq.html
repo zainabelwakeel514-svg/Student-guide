@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة الشائعة - المساعدة</title>
+    <meta name="description" content="الأسئلة الشائعة والمساعدة - كلية الحاسبات والذكاء الاصطناعي - جامعة الأزهر بنات">
+    <meta name="keywords" content="مساعدة, أسئلة شائعة, كلية حاسبات, ذكاء اصطناعي, جامعة الأزهر">
+    <meta name="author" content="كلية الحاسبات والذكاء الاصطناعي - جامعة الأزهر">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/logo2.jpeg">
+
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header-section">
+        <img src="image/logo2.jpeg" alt="لوجو الكلية 1">
+        <button class="menu-toggle" id="mobileMenuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <section>
+            <h1>كلية الحاسبات والذكاء الاصطناعي</h1>
+            <p>[جامعة الأزهر - بنات]</p>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسيه</a></li>
+                <li><a href="exam.html">اختبار القدرات</a></li>
+                <li><a href="faq.html">المساعدة</a></li>
+                <li><a href="depart.html">التخصصات</a></li>
+                <li><a href="registration.html">التسجيل</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <img src="image/images.jpeg" alt="لوجو الكلية 2">
+    </header>
+    <!-- عنوان الصفحة -->
+    <div class="faq-header">
+        <h1>الأسئلة الشائعة؟؟؟؟</h1>
+        <p>نحن هنا لمساعدتك! إليك إجابات لأكثر الأسئلة شيوعاً</p>
+    </div>
+    <main class="faq-container">
+
+
+        <!-- قسم البحث -->
+        <div class="faq-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="faqSearch" placeholder="ابحث عن سؤال...">
+        </div>
+
+        <!-- فلاتر التصنيفات -->
+        <div class="faq-filters">
+            <button class="filter-btn active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="admission">القبول والتسجيل</button>
+            <button class="filter-btn" data-filter="study">الدراسة والتخصصات</button>
+            <button class="filter-btn" data-filter="exam">اختبار القدرات</button>
+            <button class="filter-btn" data-filter="technical">خدمات تقنية</button>
+            <button class="filter-btn" data-filter="general">أسئلة عامة</button>
+        </div>
+
+        <!-- الأسئلة الشائعة -->
+        <div class="faq-list">
+            <!-- القبول والتسجيل -->
+            <div class="faq-category" data-category="admission">
+                <h2><i class="fa-solid fa-graduation-cap"></i> القبول والتسجيل</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> ما هي شروط القبول في الكلية؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>شروط القبول في كلية الحاسبات والذكاء الاصطناعي:</p>
+                        <ul>
+                            <li>الحصول على شهادة الثانوية العامة أو ما يعادلها</li>
+                            <li>اجتياز الحد الأدنى للقبول الذي تحدده الكلية سنوياً</li>
+                            <li>اجتياز اختبار القدرات (اختبار تحديد التخصص المناسب)</li>
+                            <li>اجتياز المقابلة الشخصية (في بعض الحالات)</li>
+                            <li>الالتزام بجميع اللوائح والقوانين الداخلية للكلية</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> ما هي الأوراق المطلوبة للتسجيل؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>الأوراق المطلوبة للتقديم في الكلية:</p>
+                        <ul>
+                            <li>أصل شهادة الثانوية العامة + 3 صور</li>
+                            <li>صورة بطاقة الرقم القومي (وجهين)</li>
+                            <li>عدد 6 صور شخصية حديثة</li>
+                            <li>شهادة الميلاد الأصلية + صورة</li>
+                            <li>نموذج 2 جند للطلاب (للذكور)</li>
+                            <li>إيصال سداد الرسوم الدراسية</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> متى يبدأ التقديم للكلية؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>يبدأ التقديم للكلية عادةً في شهر يوليو من كل عام ويستمر حتى شهر سبتمبر. يتم الإعلان عن
+                            المواعيد الدقيقة على الموقع الرسمي للكلية وصفحات التواصل الاجتماعي. يُنصح بمتابعة الإعلانات
+                            الرسمية لمعرفة المواعيد المحددة.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الدراسة والتخصصات -->
+            <div class="faq-category" data-category="study">
+                <h2><i class="fa-solid fa-laptop-code"></i> الدراسة والتخصصات</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> ما هي التخصصات المتاحة في الكلية؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>توفر الكلية أربعة تخصصات رئيسية متميزة:</p>
+                        <ul>
+                            <li><strong>الذكاء الاصطناعي:</strong> تصميم أنظمة ذكية قادرة على التعلم واتخاذ القرارات
+                            </li>
+                            <li><strong>علوم الحاسب:</strong> البرمجة والخوارزميات وبناء الأنظمة والبرمجيات</li>
+                            <li><strong>علوم البيانات:</strong> تحليل البيانات واستخراج المعرفة لدعم القرارات</li>
+                            <li><strong>الأمن السيبراني:</strong> حماية الأنظمة والشبكات من الاختراقات</li>
+                        </ul>
+                        <p>يمكنك زيارة <a href="depart.html">صفحة التخصصات</a> لمزيد من التفاصيل حول كل تخصص.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> كم سنة مدة الدراسة في الكلية؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>مدة الدراسة في الكلية هي <strong>4 سنوات</strong> دراسية، يحصل الطالب بعدها على درجة
+                            البكالوريوس في التخصص الذي اختاره. السنة الأولى تكون سنة تحضيرية تشمل مواد أساسية لجميع
+                            التخصصات، ثم يبدأ الطالب في دراسة مواد التخصص من السنة الثانية.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> هل يوجد تدريب عملي أثناء الدراسة؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم، تولي الكلية اهتماماً كبيراً بالجانب العملي والتطبيقي:</p>
+                        <ul>
+                            <li>تدريبات صيفية إجبارية في شركات ومؤسسات تقنية</li>
+                            <li>معامل مجهزة بأحدث التقنيات للتطبيق العملي</li>
+                            <li>مشاريع تخرج تطبيقية تحل مشكلات واقعية</li>
+                            <li>ورش عمل ودورات تدريبية مع خبراء في المجال</li>
+                            <li>شراكات مع كبرى شركات التكنولوجيا</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> هل يمكن تغيير التخصص بعد الالتحاق؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>يمكن للطالب تقديم طلب لتغيير التخصص وفقاً للشروط التالية:</p>
+                        <ul>
+                            <li>أن يكون الطالب قد أكمل السنة الأولى بنجاح</li>
+                            <li>توفر مقعد شاغر في التخصص المطلوب</li>
+                            <li>استيفاء الحد الأدنى من المعدل المطلوب للتخصص الجديد</li>
+                            <li>يتم التقديم خلال فترة التحويلات المحددة بداية العام الدراسي</li>
+                        </ul>
+                        <p>يُنصح بالتواصل مع إدارة شؤون الطلاب لمعرفة التفاصيل الدقيقة.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- اختبار القدرات -->
+            <div class="faq-category" data-category="exam">
+                <h2><i class="fa-solid fa-brain"></i> اختبار القدرات</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> ما هو اختبار القدرات؟ ولماذا هو
+                            مطلوب؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>اختبار القدرات هو اختبار تحديد التخصص المناسب للطالب بناءً على قدراته وميوله. يتكون الاختبار
+                            من 40 سؤالاً تغطي أربعة مجالات رئيسية (الذكاء الاصطناعي، علوم الحاسب، علوم البيانات، الأمن
+                            السيبراني).</p>
+                        <p><strong>أهمية الاختبار:</strong> يساعد الاختبار الطالب في اختيار التخصص الأنسب له، مما يزيد
+                            من فرص نجاحه وتفوقه في دراسته المستقبلية.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> كيف يمكنني أداء اختبار القدرات؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>يمكنك أداء اختبار القدرات بسهولة عبر <a href="exam.html">صفحة الاختبار</a> في الموقع.
+                            الاختبار مجاني تماماً ولا يتطلب أي رسوم. كل ما عليك فعله هو الإجابة على 40 سؤالاً بصدق،
+                            وسيظهر لك نتيجة مفصلة توضح التخصصات المناسبة لك حسب ترتيب الأولوية.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> هل درجة الاختبار تؤثر على قبولي في
+                            الكلية؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>بالتأكيد، درجة اختبار القدرات تعتبر أحد عوامل القبول الأساسية في الكلية، إلى جانب مجموع
+                            الثانوية العامة. يهدف الاختبار إلى قياس مدى توافق الطالب مع التخصص الذي يرغب في الالتحاق به،
+                            مما يضمن نجاحه وتفوقه خلال سنوات الدراسة.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- خدمات تقنية -->
+            <div class="faq-category" data-category="technical">
+                <h2><i class="fa-solid fa-microchip"></i> خدمات تقنية</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> هل توفر الكلية معامل حاسوب للطلاب؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم، تحتوي الكلية على مجموعة متطورة من المعامل المجهزة بأحدث أجهزة الحاسب والخوادم، منها:</p>
+                        <ul>
+                            <li>معامل ذكاء اصطناعي متخصصة بوحدات معالجة رسومية (GPU) عالية الأداء</li>
+                            <li>معامل أمن سيبراني لاختبار الاختراق الأخلاقي</li>
+                            <li>معامل برمجة وتطوير متكاملة</li>
+                            <li>معامل تحليل بيانات ضخمة</li>
+                            <li>خدمة الواي فاي المجانية في جميع أنحاء الكلية</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> كيف يمكنني الحصول على البريد الإلكتروني
+                            الجامعي؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>بعد الانتهاء من إجراءات التسجيل والقبول، سيتم إنشاء بريد إلكتروني جامعي لكل طالب. يمكنك تفعيل
+                            البريد الإلكتروني من خلال:</p>
+                        <ul>
+                            <li>زيارة موقع الخدمات الإلكترونية للجامعة</li>
+                            <li>إدخال الرقم الأكاديمي وكلمة المرور الأولية (سلمتها إدارة القبول)</li>
+                            <li>تغيير كلمة المرور بعد أول دخول</li>
+                            <li>البريد الإلكتروني سيكون بصيغة: student_id@azhar.edu.eg</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> ماذا لو واجهت مشكلة تقنية في الموقع؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>إذا واجهتك أي مشكلة تقنية أثناء استخدام الموقع، يمكنك:</p>
+                        <ul>
+                            <li>إرسال رسالة عبر <a href="contact.html">نموذج الاتصال</a> مع شرح تفصيلي للمشكلة</li>
+                            <li>الاتصال على الرقم 0123456789 (الدعم الفني)</li>
+                            <li>إرسال بريد إلكتروني على: support@FCAI.azhar.edu.eg</li>
+                            <li>مسح ذاكرة التخزين المؤقت (Cache) للمتصفح وإعادة المحاولة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أسئلة عامة -->
+            <div class="faq-category" data-category="general">
+                <h2><i class="fa-solid fa-globe"></i> أسئلة عامة</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> ما هي ساعات العمل الرسمية للكلية؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>ساعات العمل الرسمية لإدارة الكلية:</p>
+                        <ul>
+                            <li><strong>من الأحد إلى الخميس:</strong> 9:00 صباحاً - 3:00 مساءً</li>
+                            <li><strong>الجمعة والسبت:</strong> عطلة رسمية</li>
+                            <li><strong>استقبال الطلاب:</strong> 10:00 صباحاً - 2:00 مساءً</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> كيف يمكنني الوصول إلى الكلية؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>عنوان الكلية: الحي السابع - مدينة نصر - القاهرة - مصر</p>
+                        <p><strong>طرق الوصول:</strong></p>
+                        <ul>
+                            <li><strong>مترو الأنفاق:</strong> أقرب محطة هي محطة مدينة نصر، ثم استقل أتوبيس النقل
+                                الداخلي</li>
+                            <li><strong>أتوبيسات النقل الداخلي:</strong> خط 101، 102، 105 يمرون بجوار الكلية</li>
+                            <li><strong>بسيارة خاصة:</strong> استخدم خرائط جوجل (Google Maps) للوصول بأسهل طريق</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> هل يوجد أنشطة طلابية داخل الكلية؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم، توفر الكلية بيئة طلابية متكاملة تشمل:</p>
+                        <ul>
+                            <li>فريق برمجي للمشاركة في المسابقات المحلية والعالمية</li>
+                            <li>نادي الذكاء الاصطناعي وعلوم البيانات</li>
+                            <li>فريق الأمن السيبراني لاختبار الاختراق الأخلاقي</li>
+                            <li>رحلات علمية لزيارة الشركات التقنية الكبرى</li>
+                            <li>فعاليات ثقافية واجتماعية متنوعة</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span><i class="fa-regular fa-circle-question"></i> كيف يمكنني الحصول على شهادة التخرج؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>بعد استكمال متطلبات التخرج بنجاح، يمكن الحصول على شهادة التخرج باتباع الآتي:</p>
+                        <ul>
+                            <li>تعبئة نموذج طلب استخراج الشهادة من إدارة شؤون الخريجين</li>
+                            <li>سداد الرسوم المقررة (تختلف حسب عدد الشهادات المطلوبة)</li>
+                            <li>إحضار صورة شخصية حديثة (أربع صور)</li>
+                            <li>تستغرق عملية استخراج الشهادة من أسبوع إلى أسبوعين</li>
+                            <li>يمكن الحصول على نسخة إلكترونية معتمدة عبر الموقع</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم التواصل للمساعدة الإضافية -->
+        <div class="faq-contact">
+            <i class="fa-solid fa-headset"></i>
+            <h3>لم تجد إجابة لسؤالك؟</h3>
+            <p>نحن هنا لمساعدتك! تواصل معنا وسنرد عليك في أقرب وقت</p>
+            <div class="faq-contact-buttons">
+                <a href="contact.html" class="btn-primary"><i class="fa-solid fa-envelope"></i> اتصل بنا</a>
+                <a href="registration.html" class="btn-secondary"><i class="fa-solid fa-pen-to-square"></i> سجل الآن</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact-social">
+            <div class="contact-info">
+                <h3>تواصل معنا</h3>
+                <p>📍 الحي السابع - مدينه نصر - القاهرة - مصر</p>
+                <p>📧 info@FCAI.azhar.edu.eg</p>
+                <p>📞 +20 100 123 4567</p>
+                <p>📞 متاح من 9 صباحًا - 4 مساءً</p>
+            </div>
+            <div class="social-media">
+                <h3>تابعنا</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 كلية الحاسبات والذكاء الاصطناعي - جامعة الأزهر بنات. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <button class="darkmode-toggle" id="darkmodeToggle">🌙</button>
+
+    <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

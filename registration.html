@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل</title>
+    <meta name="description"
+        content="كلية الحاسبات والذكاء الاصطناعي - جامعة الأزهر بنات - تخصصات الذكاء الاصطناعي، الأمن السيبراني، علوم البيانات وعلوم الحاسب">
+    <meta name="keywords" content="كلية حاسبات, ذكاء اصطناعي, جامعة الأزهر, علوم بيانات, أمن سيبراني">
+    <meta name="author" content="كلية الحاسبات والذكاء الاصطناعي - جامعة الأزهر">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/logo2.jpeg">
+
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header-section">
+    <img src="image/logo2.jpeg" alt="لوجو الكلية 1">
+    <button class="menu-toggle" id="mobileMenuToggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <section>
+        <h1>كلية الحاسبات والذكاء الاصطناعي</h1>
+        <p>[جامعة الأزهر - بنات]</p>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسيه</a></li>
+            <li><a href="exam.html">اختبار القدرات</a></li>
+            <li><a href="faq.html">المساعدة</a></li>
+            <li><a href="depart.html">التخصصات</a></li>
+            <li><a href="registration.html">التسجيل</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+    </nav>
+    <img src="image/images.jpeg" alt="لوجو الكلية 2">
+</header>
+<div class="register-header">
+    <h1>التسجيل</h1>
+    <p>يرجى ملء نموذج تسجيل الطالب بشكل صحيح وتجهير الاوراق المطلوبه والحضور في الموعد الذي سنخبرك به الي مقر شئون الطلاب بالكليه بدون اي مرافق</p>
+</div>
+
+    <section class="steps">
+
+        <div class="card">
+            <i class="fa-solid fa-file-pen"></i>
+            <h2>الخطوة 1</h2>
+            <p>ملء استمارة التقديم الإلكترونية أو الورقية من موقع الكلية</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-folder-open"></i>
+            <h2>الخطوة 2</h2>
+            <p>تجهيز الأوراق المطلوبة (شهادة الثانوية + بطاقة الرقم القومي)</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-check"></i>
+            <h2>الخطوة 3</h2>
+            <p>مراجعة الطلب من إدارة القبول وتحديد موعد المقابلة</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h2>الخطوة 4</h2>
+            <p>القبول النهائي وبدء الدراسة داخل الكلية</p>
+        </div>
+
+    </section>
+
+    <section class="requirements">
+
+        <h2>شروط القبول</h2>
+
+        <ul>
+            <li>الحصول على الثانوية العامة أو ما يعادلها</li>
+            <li>اجتياز الحد الأدنى للقبول بالكلية</li>
+            <li>اجتياز اختبار القدرات <a href="exam.html" target="_blank"> اختبار القدرات</a></li>
+            <li>اجتياز المقابلة الشخصية (إن وجدت)</li>
+            <li>الالتزام باللوائح الداخلية للكلية</li>
+        </ul>
+
+    </section>
+
+    <section class="documents">
+
+        <h2>الأوراق المطلوبة</h2>
+
+        <ul>
+            <li>أصل شهادة الثانوية العامة</li>
+            <li>صورة بطاقة الرقم القومي</li>
+            <li>عدد 6 صور شخصية</li>
+            <li>شهادة الميلاد</li>
+        </ul>
+
+    </section>
+    <section class="register-section">
+
+        <h2>نموذج تسجيل الطالب</h2>
+        <p>يرجى إدخال البيانات بشكل صحيح لإتمام عملية التقديم</p>
+
+        <form id="registerForm">
+
+            <div class="form-group">
+                <label>الاسم الكامل</label>
+                <input type="text" id="name" placeholder="اكتب اسمك بالكامل">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label>البريد الإلكتروني</label>
+                <input type="email" id="email" placeholder="example@mail.com">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label>رقم الهاتف</label>
+                <input type="text" id="phone" placeholder="01xxxxxxxxx">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label>الكلية / التخصص</label>
+                <select id="department">
+                    <option value="">اختر التخصص</option>
+                    <option>الذكاء الاصطناعي</option>
+                    <option>علوم الحاسب</option>
+                    <option>علوم البيانات</option>
+                    <option>الأمن السيبراني</option>
+                </select>
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label>كلمة المرور</label>
+                <input type="password" id="password" placeholder="********">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label>تأكيد كلمة المرور</label>
+                <input type="password" id="confirmPassword" placeholder="********">
+                <small class="error"></small>
+            </div>
+
+            <button type="submit">تسجيل</button>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <div class="contact-social">
+
+            <div class="contact-info">
+                <h3>تواصل معنا</h3>
+                <p>📍 الحي السابع - مدينه نصر - القاهرة - مصر</p>
+                <p>📧 info@FCAI.azhar.edu.eg</p>
+                <p>📞 +20 100 123 4567 </p>
+                <p>📞 متاح من 9 صباحًا - 4 مساءً</p>
+            </div>
+
+            <div class="social-media">
+                <h3>تابعنا</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <p>&copy; 2024 كلية الحاسبات والذكاء الاصطناعي - جامعة الأزهر بنات. جميع الحقوق محفوظة.</p>
+
+    </footer>
+    <button class="darkmode-toggle" id="darkmodeToggle">🌙</button>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

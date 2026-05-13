@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>اختبار القدرات - تحديد التخصص المناسب</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="image/logo2.jpeg">
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header-section">
+    <img src="image/logo2.jpeg" alt="لوجو الكلية 1">
+    <button class="menu-toggle" id="mobileMenuToggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <section>
+        <h1>كلية الحاسبات والذكاء الاصطناعي</h1>
+        <p>[جامعة الأزهر - بنات]</p>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسيه</a></li>
+            <li><a href="exam.html" class="active">اختبار القدرات</a></li>
+            <li><a href="faq.html">المساعدة</a></li>
+            <li><a href="depart.html">التخصصات</a></li>
+            <li><a href="registration.html">التسجيل</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+    </nav>
+    <img src="image/images.jpeg" alt="لوجو الكلية 2">
+</header>
+ <div class="exam-header">
+        <h1><i class="fa-solid fa-brain"></i> اختبار تحديد التخصص المناسب</h1>
+        <p>أجب عن جميع الأسئلة بصدق لنساعدك في اختيار التخصص الأنسب لقدراتك وميولك</p>
+    </div>
+<!-- صفحة الأسئلة -->
+<div id="examSection" class="exam-container">
+   
+
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <div class="question-counter">
+        السؤال <span id="currentQNumber">1</span> من <span id="totalQ">?</span>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text" id="questionText"></div>
+        <div class="options" id="optionsContainer"></div>
+        <div class="nav-buttons">
+            <button class="nav-btn" id="prevBtn" style="display:none;">السابق <i class="fa-solid fa-arrow-right"></i></button>
+            <button class="nav-btn" id="nextBtn">التالي <i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </div>
+</div>
+
+<!-- صفحة النتائج -->
+<div id="resultsSection" class="results-container hidden">
+    <div class="result-card">
+        <i class="fa-solid fa-chart-simple" style="font-size: 3rem; color: var(--primary);"></i>
+        <h1>نتيجة اختبار القدرات</h1>
+        <p>بناءً على إجاباتك، هذه هي التخصصات المناسبة لك مرتبة من الأنسب للأقل</p>
+
+        <div class="score-circle">
+            <canvas id="scoreChart" width="150" height="150"></canvas>
+        </div>
+
+        <div class="specialty-rank" id="specialtyRank"></div>
+
+        <div class="result-buttons">
+            <button class="restart-btn" id="restartBtn">
+                <i class="fa-solid fa-rotate-right"></i> إعادة الاختبار
+            </button>
+            <a href="registration.html" class="register-link">
+                <i class="fa-solid fa-pen-to-square"></i> سجل الآن
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="contact-social">
+        <div class="contact-info">
+            <h3>تواصل معنا</h3>
+            <p>📍 الحي السابع - مدينه نصر - القاهرة - مصر</p>
+            <p>📧 info@FCAI.azhar.edu.eg</p>
+            <p>📞 +20 100 123 4567</p>
+        </div>
+        <div class="social-media">
+            <h3>تابعنا</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <p>&copy; 2024 كلية الحاسبات والذكاء الاصطناعي - جامعة الأزهر بنات. جميع الحقوق محفوظة.</p>
+</footer>
+
+<button class="darkmode-toggle" id="darkmodeToggle">🌙</button>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
